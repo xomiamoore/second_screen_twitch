@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script>
+        window.setInterval(function() {
+            reloadIFrame()
+        }, 3000);
+
+        function reloadIFrame() {
+            console.log('reloading..');
+            document.getElementById('schedule').contentWindow.location.reload();
+        }
+    </script>
+</head>
+<body>
+<div id=derp>
+<iframe frameborder="0"
+        scrolling="no"
+        id="chat_embed"
+        src="http://www.twitch.tv/embed/ibmdeveloper/chat"
+        height="700"
+        width="550">
+</iframe>
+<iframe frameborder="0"
+        scrolling="no"
+        id="schedule"
+        src="http://spencerkrum.com/twitch/cta_and_schedule.html"
+        height="700"
+        width="300">
+</iframe>
+</div>
+
+</body>
+</html>
+
+
